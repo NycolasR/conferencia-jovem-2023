@@ -21,18 +21,18 @@
   background: #5eff00;
   margin: 0 4px;
   border-radius: 50%;
-  box-shadow: 0 0 0 5px #5eff0044,
-  0 0 50px #5eff00,
-  0 0 100px #5eff00;
+  box-shadow: 0 0 0 5px #5eff0044, 0 0 50px #5eff00, 0 0 100px #5eff00;
   animation: animate 15s linear infinite;
   animation-duration: calc(125s / var(--i));
 }
 
 .bubbles span:nth-child(even) {
   background: #0f1fff;
-  box-shadow: 0 0 0 5px #0f1fff44,
-  0 0 50px #0f1fff,
-  0 0 100px #0f1fff;
+  box-shadow: 0 0 0 5px #0f1fff44, 0 0 50px #0f1fff, 0 0 100px #0f1fff;
+}
+
+.vis-network {
+  position: absolute !important;
 }
 
 #foto {
@@ -64,13 +64,13 @@
   border-radius: 15px;
   color: white;
   font-family: 400;
-  background: linear-gradient(to right, rgb(42, 252, 53), rgb(0, 216, 54));
+  background: linear-gradient(to right, rgb(255, 107, 107), rgb(255, 162, 219));
   cursor: pointer;
 }
 
 #botoes .btn-info:hover {
   animation: btn-animacao 0.5s alternate infinite ease-in-out;
-  box-shadow: 0 0 50px 20px rgba(113, 224, 21, 0.5);
+  box-shadow: 0 0 50px 20px rgba(224, 21, 21, 0.5);
 }
 
 #video-divulgacao {
@@ -86,7 +86,6 @@
     width: 230px;
   }
 }
-
 
 @media only screen and (max-width: 900px) {
   #foto img {

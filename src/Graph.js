@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { DataSet } from "vis-data";
 import { Network } from "vis-network";
 
@@ -16,7 +16,7 @@ const Graph = () => {
     nodes: new DataSet(
       Array.from({ length: 60 }, (_, i) => ({
         id: i + 1,
-        color: { background: "#EA7ED7", border: "#EA1E9A" },
+        color: { background: "#EA7ED7", border: "#EA1E9F" },
       }))
     ),
     edges: new DataSet(
@@ -33,23 +33,11 @@ const Graph = () => {
     layout: {
       randomSeed: 1, // semente aleatória para garantir a mesma posição dos nós em cada execução
       improvedLayout: true,
-      random: {
-        enabled: true,
-        barnesHut: {
-          gravitationalConstant: -30000,
-          centralGravity: 0.3,
-          springLength: 300,
-          springConstant: 0.05,
-          damping: 0.09,
-          avoidOverlap: 0,
-        },
-        processProperties: true,
-      },
     },
     physics: {
       barnesHut: {
         gravitationalConstant: -80000,
-        centralGravity: 15,
+        centralGravity: 10,
         springLength: 250,
         springConstant: 0.04,
         damping: 0.09,
