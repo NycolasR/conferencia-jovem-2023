@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(100deg, #f4a1ff, #dbdbdb, #fc85c6, #ffd4ea);
+  background-size: 300%, 300%;
+  background-repeat: repeat;
+  animation: colors 7s ease infinite;
+}
+
+@keyframes colors {
+  0% {
+    background-position: 0%, 50%;
+  }
+  50% {
+    background-position: 100%, 50%;
+  }
+  100% {
+    background-position: 0%, 50%;
+  }
+}
