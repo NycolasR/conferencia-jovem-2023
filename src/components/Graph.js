@@ -7,13 +7,6 @@ const Graph = () => {
   const [windowHeight, setWindowHeight] = useState(window.innerHeight);
   const containerRef = useRef(null);
 
-  // const edges = [];
-  // for (let i = 1; i <= 80; i++) {
-  //   for (let j = i + 1; j <= 80; j++) {
-  //     edges.push({ from: i, to: j });
-  //   }
-  // }
-
   const data = {
     nodes: new DataSet(
       Array.from({ length: 60 }, (_, i) => ({
