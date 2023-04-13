@@ -62,15 +62,15 @@
   padding: 15px 30px;
   border: 0;
   border-radius: 15px;
-  color: white;
+  color: rgb(53, 122, 44);
   font-family: 400;
-  background: linear-gradient(to right, rgb(255, 107, 107), rgb(255, 162, 219));
+  background: linear-gradient(to right, rgb(181, 250, 142), rgb(131, 255, 137));
   cursor: pointer;
 }
 
 #botoes .btn-info:hover {
   animation: btn-animacao 0.5s alternate infinite ease-in-out;
-  box-shadow: 0 0 50px 20px rgba(224, 21, 21, 0.5);
+  box-shadow: 0 0 50px 20px rgba(45, 224, 21, 0.5);
 }
 
 #video-divulgacao {

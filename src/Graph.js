@@ -3,6 +3,8 @@ import { DataSet } from "vis-data";
 import { Network } from "vis-network";
 
 const Graph = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [windowHeight, setWindowHeight] = useState(window.innerHeight);
   const containerRef = useRef(null);
 
   // const edges = [];
@@ -16,7 +18,7 @@ const Graph = () => {
     nodes: new DataSet(
       Array.from({ length: 60 }, (_, i) => ({
         id: i + 1,
-        color: { background: "#EA7ED7", border: "#EA1E9F" },
+        color: { background: "#fff", border: "#10ff31" },
       }))
     ),
     edges: new DataSet(
@@ -28,8 +30,8 @@ const Graph = () => {
   };
 
   const options = {
-    width: "2560px",
-    height: "1080px",
+    width: windowWidth,
+    height: windowHeight,
     layout: {
       randomSeed: 1, // semente aleatória para garantir a mesma posição dos nós em cada execução
       improvedLayout: true,
@@ -52,8 +54,18 @@ const Graph = () => {
   };
   let network = null;
 
+  const handleResize = () => {
+    setWindowWidth(window.innerWidth);
+    setWindowHeight(window.innerHeight);
+  };
+
   useEffect(() => {
     network = new Network(containerRef.current, data, options);
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   return <div ref={containerRef}></div>;

@@ -6,7 +6,7 @@
 
 body {
   min-height: 100vh;
-  background: linear-gradient(100deg, #f4a1ff, #dbdbdb, #fc85c6, #ffd4ea);
+  background: linear-gradient(100deg, #34700c, #0f8a0f, #1c8840, #226400);
   background-size: 300%, 300%;
   background-repeat: repeat;
   animation: colors 7s ease infinite;

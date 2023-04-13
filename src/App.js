@@ -3,7 +3,7 @@ import { Box, Typography, Modal } from "@mui/material";
 
 import Graph from "./Graph";
 
-import teste from "./assets/images/teste.png";
+import arteConferencia from "./assets/images/arte-conf.png";
 
 import "./App.css";
 
@@ -13,7 +13,7 @@ const styleModals = {
   left: "50%",
   boxShadow: 25,
   position: "absolute",
-  border: "2px solid #105131",
+  border: "2px solid #105231",
   bgcolor: "background.paper",
   transform: "translate(-50%, -50%)",
 };
@@ -65,7 +65,7 @@ function App() {
       {/* <div className="bubbles">{bubbles.map((bubble) => bubble)}</div> */}
       <Graph />
       <div id="foto">
-        <img src={teste} alt="teste" />
+        <img src={arteConferencia} alt="arteConferencia" />
       </div>
       <div id="botoes">
         <button onClick={playVideo} className="btn-info">
@@ -90,27 +90,6 @@ function App() {
               allowfullscreen
             ></iframe>
           </div>
-
-          <Typography
-            id="modal-modal-title"
-            variant="p"
-            component="p"
-            style={{
-              textAlign: "center",
-              fontFamily: "sans-serif",
-              marginBottom: "20px",
-              maxWidth: "560px",
-            }}
-          >
-            Aq vai ficar a mensagem depois do vídeo. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Cras ut est at lorem ornare varius.
-            Fusce in imperdiet mauris, quis tristique nisi. Vivamus quis
-            tristique eros, non molestie massa. Sed maximus diam ac leo sodales
-            rutrum. Curabitur et aliquam nisi, vitae ultricies lacus. Donec in
-            turpis semper, bibendum libero ac, efficitur felis. In luctus sapien
-            dui, eu sollicitudin risus pretium eu. Etiam malesuada nunc orci, in
-            pretium nibh facilisis non. pulvinar id quis tortor.
-          </Typography>
         </Box>
       </Modal>
     </div>
