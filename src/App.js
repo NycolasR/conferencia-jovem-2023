@@ -1,12 +1,17 @@
-import { useState } from "react";
+import { createRef, useState } from "react";
 import { Box, Modal } from "@mui/material";
+import Carousel from "react-elastic-carousel";
 
 import Graph from "./components/Graph";
 import { styleModals } from "./utils/constantes";
 
 import arteConferencia from "./assets/images/arte-conf.png";
+import musica from "./assets/music/reluz.mp3";
+
+import teste from "./assets/images/teste.jpeg";
 
 import "./App.css";
+import CarrosselImagens from "./components/CarrosselImagens";
 
 function App() {
   const [openModalVideoDivulgacao, setOpenModalVideoDivulgacao] =
@@ -16,18 +21,26 @@ function App() {
   const handleCloseModalVideoDivulgacao = () =>
     setOpenModalVideoDivulgacao(false);
 
-  const playVideo = () => {
+  const audioRef = createRef();
+
+  const playMusica = () => {
+    // audioRef.current.play();
+  };
+
+  const showInformacoes = () => {
+    playMusica();
     handleOpenModalVideoDivulgacao();
   };
 
   return (
     <div className="container">
       <Graph />
+      <audio ref={audioRef} src={musica} controls loop />
       <div id="foto">
         <img src={arteConferencia} alt="arteConferencia" />
       </div>
       <div id="botoes">
-        <button onClick={playVideo} className="btn-info">
+        <button onClick={showInformacoes} className="btn-info">
           Mais informações aqui!
         </button>
       </div>
@@ -39,15 +52,7 @@ function App() {
       >
         <Box sx={styleModals}>
           <div id="video-divulgacao">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/P-rFhRi7jwc"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
+            <CarrosselImagens />
           </div>
         </Box>
       </Modal>

@@ -23,8 +23,8 @@ const Graph = () => {
   };
 
   const options = {
-    width: windowWidth,
-    height: windowHeight,
+    width: Number(windowWidth),
+    height: Number(windowHeight),
     layout: {
       randomSeed: 1, // semente aleatória para garantir a mesma posição dos nós em cada execução
       improvedLayout: true,

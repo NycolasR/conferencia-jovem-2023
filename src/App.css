@@ -5,7 +5,8 @@
   overflow: hidden;
 }
 
-.empty-svg {
+.empty-svg,
+audio {
   display: none;
 }
 
@@ -51,17 +52,13 @@
   box-shadow: 0 0 50px 20px rgba(45, 224, 21, 0.5);
 }
 
-#video-divulgacao {
-  margin-bottom: 15px !important;
+.MuiBox-root {
+  padding: 18px !important;
 }
 
 @media only screen and (max-width: 600px) {
-  .MuiBox-root.css-1yjp6m4 {
-    width: 300px;
-  }
-
-  iframe {
-    width: 230px;
+  .MuiBox-root {
+    width: 350px !important;
   }
 }
 
