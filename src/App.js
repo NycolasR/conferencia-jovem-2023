@@ -1,6 +1,5 @@
 import { createRef, useState } from "react";
 import { Box, Modal } from "@mui/material";
-import Carousel from "react-elastic-carousel";
 
 import Graph from "./components/Graph";
 import { styleModals } from "./utils/constantes";
@@ -8,10 +7,8 @@ import { styleModals } from "./utils/constantes";
 import arteConferencia from "./assets/images/arte-conf.png";
 import musica from "./assets/music/reluz.mp3";
 
-import teste from "./assets/images/teste.jpeg";
-
 import "./App.css";
-import CarrosselImagens from "./components/CarrosselImagens";
+import GifInfos from "./components/GifInfos";
 
 function App() {
   const [openModalVideoDivulgacao, setOpenModalVideoDivulgacao] =
@@ -24,7 +21,7 @@ function App() {
   const audioRef = createRef();
 
   const playMusica = () => {
-    // audioRef.current.play();
+    audioRef.current.play();
   };
 
   const showInformacoes = () => {
@@ -51,8 +48,8 @@ function App() {
         aria-describedby="modal-modal-description"
       >
         <Box sx={styleModals}>
-          <div id="video-divulgacao">
-            <CarrosselImagens />
+          <div id="gif-divulgacao">
+            <GifInfos />
           </div>
         </Box>
       </Modal>
