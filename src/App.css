@@ -60,6 +60,16 @@ audio {
   .MuiBox-root {
     width: 350px !important;
   }
+
+  #botoes {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    width: 100vw;
+    height: 140vh;
+  }
 }
 
 @media only screen and (max-width: 900px) {
