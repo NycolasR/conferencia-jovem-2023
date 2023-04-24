@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/conferencia-jovem-2023/static/css/main.344aaaa5.css",
+    "main.css": "/conferencia-jovem-2023/static/css/main.5e4712fe.css",
     "main.js": "/conferencia-jovem-2023/static/js/main.c2accb23.js",
     "static/media/infos.gif": "/conferencia-jovem-2023/static/media/infos.a6dd151a030d5f986e00.gif",
     "static/media/reluz.mp3": "/conferencia-jovem-2023/static/media/reluz.a6a7d11a27e893d99952.mp3",
     "static/media/arte-conf.png": "/conferencia-jovem-2023/static/media/arte-conf.e7e0a9282119460af838.png",
     "index.html": "/conferencia-jovem-2023/index.html",
-    "main.344aaaa5.css.map": "/conferencia-jovem-2023/static/css/main.344aaaa5.css.map",
+    "main.5e4712fe.css.map": "/conferencia-jovem-2023/static/css/main.5e4712fe.css.map",
     "main.c2accb23.js.map": "/conferencia-jovem-2023/static/js/main.c2accb23.js.map"
   },
   "entrypoints": [
-    "static/css/main.344aaaa5.css",
+    "static/css/main.5e4712fe.css",
     "static/js/main.c2accb23.js"
   ]
 }
