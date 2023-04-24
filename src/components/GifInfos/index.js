@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import gif from "../../assets/images/infos.gif";
 
 import { Link, Typography } from "@mui/material";
-
 import "./styles.css";
 
 const GifInfos = () => {
