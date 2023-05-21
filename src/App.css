@@ -41,15 +41,15 @@ audio {
   padding: 15px 30px;
   border: 0;
   border-radius: 15px;
-  color: rgb(53, 122, 44);
+  color: rgb(192, 206, 255);
   font-family: 400;
-  background: linear-gradient(to right, rgb(181, 250, 142), rgb(131, 255, 137));
+  background: linear-gradient(to right, rgb(35, 78, 196), rgb(15, 26, 128));
   cursor: pointer;
 }
 
 #botoes .btn-info:hover {
   animation: btn-animacao 0.5s alternate infinite ease-in-out;
-  box-shadow: 0 0 50px 20px rgba(45, 224, 21, 0.5);
+  box-shadow: 0 0 50px 20px rgba(34, 21, 155, 0.5);
 }
 
 .MuiBox-root {

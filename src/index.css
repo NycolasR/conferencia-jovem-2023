@@ -7,7 +7,7 @@
 body {
   min-height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(100deg, #34700c, #0f8a0f, #1c8840, #226400);
+  background: linear-gradient(100deg, #091231, #172455, #0b1b57, #091231);
   background-size: 300%, 300%;
   background-repeat: repeat;
   animation: colors 7s ease infinite;
