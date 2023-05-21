@@ -41,7 +41,7 @@ audio {
   padding: 15px 30px;
   border: 0;
   border-radius: 15px;
-  color: rgb(192, 206, 255);
+  color: rgb(255, 255, 255);
   font-family: 400;
   background: linear-gradient(to right, rgb(35, 78, 196), rgb(15, 26, 128));
   cursor: pointer;
